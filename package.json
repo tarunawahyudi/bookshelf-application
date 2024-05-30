@@ -1,0 +1,17 @@
+{
+  "name": "bookshelf-application",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/app.css -o ./dist/style.css --watch",
+    "build": "tailwindcss -o ./dist/style.min.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.3"
+  }
+}
