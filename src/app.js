@@ -23,7 +23,7 @@ inputBookForm.addEventListener('submit', function(event) {
   const year = document.querySelector('#inputBookYear').value;
   const isComplete = document.querySelector('#inputBookIsComplete').checked;
 
-  const book = new Book(+new Date(), title, author, year, isComplete);
+  const book = new Book(+new Date(), title, author, parseInt(year), isComplete);
   const bookManager = new BookManager();
   bookManager.addBook(book);
   UI.addBookToList(book);

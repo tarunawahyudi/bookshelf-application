@@ -5,13 +5,15 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "dev": "tailwindcss -i ./src/app.css -o ./dist/style.css --watch",
+    "dev": "vite",
+    "create": "tailwindcss -i ./src/app.css -o ./dist/style.css --watch",
     "build": "tailwindcss -o ./dist/style.min.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "tailwindcss": "^3.4.3"
+    "tailwindcss": "^3.4.3",
+    "vite": "^5.2.12"
   }
 }
